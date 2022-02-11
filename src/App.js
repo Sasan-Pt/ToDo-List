@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import TodoList from "./components/TodoList";
+import {useAppSelector} from "./hooks"
+import Body from "./components/body";
+import styles from './styles/app.module.css'
 
 function App() {
+  const data=useAppSelector(state=>state.todo);
+  console.log(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div data-test="appComponent" className={styles.backgroundGrad}>
+          <div className={styles.center}>
+        <Body data-test="bodycomponent"/>
+        <ol data-test="olTag" className={styles.list}>
+          {data.map(x=>
+              <TodoList id={x.id} value={x.todo} key={x.id} data-test="todoListComp"/>
+          )}
+
+        </ol>
+          </div>
+      </div>
+
   );
 }
 

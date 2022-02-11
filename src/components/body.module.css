@@ -1,0 +1,30 @@
+.background{
+    background-color: #3F51B5;
+    width: 100%;
+    color: white;
+}
+.borderdown{
+    margin-left: 18%;
+}
+.borderdownsec{
+    border-bottom: 2px solid white;
+    margin-bottom: 8px;
+}
+.button{
+    background-color: #03A9F4;
+    border-radius: 5px;
+    color: white;
+    box-shadow: #03A9F4 ;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    height: 30px;
+    width: 200px;
+}
+.input{
+    height:30px;
+    width: 600px;
+}
+.container{
+    margin-left: 18%;
+}
+

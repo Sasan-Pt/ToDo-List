@@ -1,0 +1,29 @@
+.paragraph{
+    color: #414141;
+    width: 150px;
+    display: inline-block;
+}
+.button{
+    margin-left: 5%;
+    background-color: #03A9F4;
+    border-radius: 5px;
+    color: white;
+    box-shadow: #03A9F4 ;
+    height: 30px;
+    width: 200px;
+}
+.leftspace{
+    margin-left: 10px;
+    background-color: #03A9F4;
+    border-radius: 5px;
+    color: white;
+    box-shadow: #03A9F4 ;
+    height: 30px;
+    width: 200px;
+}
+.mainlist{
+    margin-bottom: 7px;
+}
+.input{
+    width: 147px;
+}
